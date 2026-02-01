@@ -61,15 +61,6 @@ When you hit spacebar, it captures 120 frames over 3.5 seconds and picks the sha
 **Performance:**
 Processes frames at 640px width for speed. Spatial hashing optimization makes neighbor detection ~20x faster. Runs detection every other frame to keep the video feed smooth.
 
-## Use Cases
-
-- **Education**: Digitize math homework and worksheets
-- **Tutoring**: Quickly capture student work for review
-- **Content creation**: Capture problems for educational videos or materials
-- **Accessibility**: Convert paper problems to digital format for screen readers
-- **Archiving**: Build a digital library of practice problems
-- **Remote learning**: Share homework problems instantly
-
 ## Options
 
 **Auto-capture mode:** Add `--auto-capture` flag to automatically capture after 2 seconds of stable detection
@@ -101,8 +92,4 @@ computer vision, opencv, text detection, document scanner, math problems, homewo
 
 ## License
 
-MIT License - Feel free to use this project for educational or commercial purposes.
-
-## Contributing
-
-Contributions welcome! Feel free to open issues or submit pull requests.
+MIT License
