@@ -1,10 +1,27 @@
 # Word Problem Detector
 
-Real-time computer vision system that detects word problems on paper and captures high-quality images.
+![Python](https://img.shields.io/badge/python-3.7+-blue.svg)
+![OpenCV](https://img.shields.io/badge/opencv-4.8+-green.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey.svg)
 
-## What It Does
+Real-time computer vision system that detects word problems on paper and captures high-quality images using OpenCV.
 
-Point your camera (webcam or IPCamera) at a piece of paper with a word problem on it. The program detects when it sees text that looks like a word problem, then captures a sharp image when you press spacebar. Uses burst capture to get the sharpest possible image even if your hand shakes.
+## Overview
+
+Point your camera (webcam or IP camera) at a piece of paper with a word problem on it. The program detects when it sees text that looks like a word problem, then captures a sharp image when you press spacebar. Uses burst capture to get the sharpest possible image even if your hand shakes.
+
+Perfect for digitizing math problems, homework, worksheets, and educational content.
+
+## Features
+
+- **Real-time text detection** - Automatically identifies word problems using computer vision
+- **Burst capture mode** - Takes 120 frames over 3.5 seconds and picks the sharpest one
+- **Webcam & IP camera support** - Works with any camera input (RTSP, USB webcam)
+- **Auto-capture mode** - Automatically captures when problem is detected and stable
+- **Voice guidance** - Optional audio feedback for positioning (macOS, Windows, Linux)
+- **Motion blur compensation** - Smart frame selection handles camera shake
+- **No OCR required** - Pure computer vision detection without text recognition
 
 ## Installation
 
@@ -44,9 +61,18 @@ When you hit spacebar, it captures 120 frames over 3.5 seconds and picks the sha
 **Performance:**
 Processes frames at 640px width for speed. Spatial hashing optimization makes neighbor detection ~20x faster. Runs detection every other frame to keep the video feed smooth.
 
+## Use Cases
+
+- **Education**: Digitize math homework and worksheets
+- **Tutoring**: Quickly capture student work for review
+- **Content creation**: Capture problems for educational videos or materials
+- **Accessibility**: Convert paper problems to digital format for screen readers
+- **Archiving**: Build a digital library of practice problems
+- **Remote learning**: Share homework problems instantly
+
 ## Options
 
-**Auto-capture mode:** Add --auto-capture flag to automatically capture after 2 seconds of stable detection
+**Auto-capture mode:** Add `--auto-capture` flag to automatically capture after 2 seconds of stable detection
 
 **Voice guidance:** Edit word_problem_demo.py line 73 and set `self.enable_voice_guidance = True`. The program will tell you if text is cut off or the camera is too close. Works on macOS without extra dependencies. Other platforms need: `pip install pyttsx3` (included in requirements.txt)
 
@@ -60,7 +86,7 @@ Processes frames at 640px width for speed. Spatial hashing optimization makes ne
 
 ## Output
 
-Images saved to captures/word_problem_YYYYMMDD_HHMMSS.png
+Images saved to `captures/word_problem_YYYYMMDD_HHMMSS.png`
 
 ## Requirements
 
@@ -68,3 +94,15 @@ Images saved to captures/word_problem_YYYYMMDD_HHMMSS.png
 - OpenCV (computer vision)
 - NumPy (array processing)
 - pyttsx3 (optional, for voice guidance on non-macOS)
+
+## Keywords
+
+computer vision, opencv, text detection, document scanner, math problems, homework scanner, burst capture, image stabilization, opencv-python, document digitization, educational tools, real-time detection, paper scanner, worksheet scanner
+
+## License
+
+MIT License - Feel free to use this project for educational or commercial purposes.
+
+## Contributing
+
+Contributions welcome! Feel free to open issues or submit pull requests.
