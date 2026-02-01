@@ -1,0 +1,12 @@
+# Word Problem Detector - Dependencies
+
+# Computer vision
+opencv-python>=4.8.0
+opencv-contrib-python>=4.8.0
+
+# Array processing
+numpy>=1.24.0
+
+# Voice guidance (optional - only if you enable it in the code)
+# macOS doesn't need this, uses built-in 'say' command
+pyttsx3>=2.90  # For voice guidance on Windows/Linux
