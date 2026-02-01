@@ -15,13 +15,12 @@ Perfect for digitizing math problems, homework, worksheets, and educational cont
 
 ## Features
 
-- **Real-time text detection** - Automatically identifies word problems using computer vision
-- **Burst capture mode** - Takes 120 frames over 3.5 seconds and picks the sharpest one
+- **Real-time text detection** - Automatically identifies word problems 
+- **Burst capture mode** - Takes 120 frames over 3.5 seconds, enhances and saves the sharpest one
 - **Webcam & IP camera support** - Works with any camera input (RTSP, USB webcam)
 - **Auto-capture mode** - Automatically captures when problem is detected and stable
 - **Voice guidance** - Optional audio feedback for positioning (macOS, Windows, Linux)
 - **Motion blur compensation** - Smart frame selection handles camera shake
-- **No OCR required** - Pure computer vision detection without text recognition
 
 ## Installation
 
