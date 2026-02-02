@@ -11,7 +11,7 @@ Real-time computer vision system that detects word problems on paper and capture
 
 Point your camera (webcam or IP camera) at a piece of paper with a word problem on it. The program detects when it sees text that looks like a word problem, then captures a sharp image when you press spacebar. Uses burst capture to get the sharpest possible image even if your hand shakes.
 
-Perfect for digitizing math problems, homework, worksheets, and educational content.
+For digitizing math problems, homework, worksheets, etc
 
 ## Features
 
@@ -58,21 +58,13 @@ The system looks for text by checking brightness, contrast, and edge patterns. I
 When you hit spacebar, it captures 120 frames over 3.5 seconds and picks the sharpest one. This handles hand shake and motion blur really well. The best frame gets saved to the captures folder.
 
 **Performance:**
-Processes frames at 640px width for speed. Spatial hashing optimization makes neighbor detection ~20x faster. Runs detection every other frame to keep the video feed smooth.
+Processes frames at 640px width for speed. Uses spatial hashing optimization to make neighbor detection ~20x faster, and the detection only runs every other frame to keep the video feed smooth.
 
 ## Options
 
 **Auto-capture mode:** Add `--auto-capture` flag to automatically capture after 2 seconds of stable detection
 
 **Voice guidance:** Edit word_problem_demo.py line 73 and set `self.enable_voice_guidance = True`. The program will tell you if text is cut off or the camera is too close. Works on macOS without extra dependencies. Other platforms need: `pip install pyttsx3` (included in requirements.txt)
-
-## Troubleshooting
-
-**Camera not found:** Try different device numbers (0, 1, 2)
-
-**Low confidence:** Make sure text isn't cut off at edges and lighting is decent
-
-**Blurry images:** Hold still during the 3.5 second capture
 
 ## Output
 
@@ -84,10 +76,6 @@ Images saved to `captures/word_problem_YYYYMMDD_HHMMSS.png`
 - OpenCV (computer vision)
 - NumPy (array processing)
 - pyttsx3 (optional, for voice guidance on non-macOS)
-
-## Keywords
-
-computer vision, opencv, text detection, document scanner, math problems, homework scanner, burst capture, image stabilization, opencv-python, document digitization, educational tools, real-time detection, paper scanner, worksheet scanner
 
 ## License
 
